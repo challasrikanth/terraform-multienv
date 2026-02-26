@@ -10,6 +10,8 @@ resource "aws_instance" "example" {
   }
 }
 
+
+
 resource "aws_security_group" "allow_tls" {
   name        = "allow-all-terraform-${local.environment}" # this is for AWS account
   description = "Allow TLS inbound traffic and all outbound traffic"
